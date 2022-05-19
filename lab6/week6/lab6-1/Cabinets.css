@@ -1,0 +1,20 @@
+body {
+    background: url('./bg1.jpg');
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0.25in;
+    border: 0.25in solid black;
+    padding: 0.25in;
+    background: url('./white-abstract-background_23-2148810113.webp');
+}
+
+.banner {
+    background: url('./bg2.jpg');
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
