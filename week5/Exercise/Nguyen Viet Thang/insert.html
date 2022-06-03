@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert data</title>
+    <style>
+        input[type=text],input[type=number]{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid rgb(163, 162, 162);
+        }
+
+        input[type=text]:focus,input[type=number]:focus{
+            border: 1.5px solid rgb(95, 95, 95);
+        }
+    </style>
+</head>
+<body>
+    <form action="./insert_table.php" method="post">
+        <label for="desc">Item Name : </label>
+        <input type="text" name="desc" id="desc" required autocomplete="off"><br><br>
+        <label for="weight">Weight : </label>
+        <input type="text" name="weight" id="weight" required autocomplete="off"><br><br>
+        <label for="cost">Cost : </label>
+        <input type="text" name="cost" id="cost" required autocomplete="off"><br><br>
+        <label for="numb">Number : </label>
+        <input type="number" name="numb" id="numb" required autocomplete="off"><br><br>
+        <input type="submit" value="Submit form">
+    </form>
+</body>
+</html>
