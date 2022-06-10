@@ -6,7 +6,7 @@
         <header>Header content</header>
         <section>
             <article>
-                <h1>Main content</h1>
+                <h1> Main content </h1>
                 <div>
                     Main contentMain contentMain contentMain content
                 </div>
