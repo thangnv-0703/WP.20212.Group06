@@ -100,6 +100,22 @@
                 </div>
               </div>
           <?php } ?>
+          <?php foreach($categories as $key1 => $value) { $flag = [] ?>
+            <?php foreach($arrS as $key2 => $value2) {?>
+              <?php foreach($value2 as $key3 => $value3) {?>
+                <?php if($value['id'] == $value3['parent_id'] || $value['parent_id'] !== null) { ?>
+                    <?php $flag[] = $value ?>
+                <?php }?>
+              <?php }?>
+            <?php }?>
+            <?php if(count($flag) == 0) {?>
+                  <li style="cursor: pointer;" class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a>
+                      <?php echo $value['name'] ?>
+                    </a>
+                  </li>
+            <?php }?>
+          <?php }?>
         </ul>
       </div>
       <h3 class="heading">
