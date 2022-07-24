@@ -20,7 +20,7 @@ require_once('controllers/BaseController.php');
 				$_SESSION['user_login'] = $user['name'];
 				$_SESSION['ava_login'] = $user['avatar'];
 				setcookie('success', 'Login successfully !!!', time() + 2);
-				$this->redirect('index.php?type=backend&mod=dashboard&act=index');
+				$this->redirect('index.php?type=backend&mod=post&act=index');
 			}
 			else {
 				$_SESSION['login'] = null;

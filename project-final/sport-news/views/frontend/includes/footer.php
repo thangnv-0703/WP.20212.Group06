@@ -1,8 +1,6 @@
 <footer id="fh5co-footer">
-		<p><small>&copy; 2021. All Rights Reserverd. <br> Designed by <a href="http://freehtml5.co" target="_blank">Hieu Nguyen</a>  Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></small></p>
+		<p><small>&copy; 2022. All Rights Reserverd. <br> Designed by <a href="http://freehtml5.co" target="_blank">Group 6</a>  Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></small></p>
 	</footer>
-
-
 	
 	<!-- jQuery -->
 	<script src="assets2/js/jquery.min.js"></script>

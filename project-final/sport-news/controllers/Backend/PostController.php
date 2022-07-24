@@ -21,7 +21,6 @@
 			$image = $_FILES['thumbnail']['name'];
 		}
 		$data_insert = [
-		    'id' => $data['id'],
 		    'title' => $data['title'],
 		    'description' => $data['description'],
 		    'thumbnail' => $image,
@@ -36,7 +35,7 @@
 		$post = new Post();
 		$posts = $post->create($data_insert);
 		if ($posts == true) {
-   	 		setcookie('add_new',"Thêm mới thành công !!!", time()+2);
+   	 		setcookie('add_new',"Add new successfully !!!", time()+2);
    		}
 		$this->redirect("index.php?type=backend&mod=post&act=index");
 	}
@@ -70,7 +69,7 @@
 		$post= new Post();
 		$posts = $post->fix($data_insert,$data['id']);
 		if ($posts == true) {
-			setcookie('update',"Đã update thông tin thành công", time()+2);
+			setcookie('update',"Update successfully", time()+2);
 		}
 		$this->redirect("index.php?type=backend&mod=post&act=index");
 	}
@@ -100,7 +99,7 @@
 		$post_obj = new  Post();
 		$post = $post_obj->del($id);
 		if ($post == true) {
-			setcookie('delete',"Xóa một mục thành công", time()+2);
+			setcookie('delete',"Delete successfully", time()+2);
 		}
 		$this->redirect("index.php?type=backend&mod=post&act=index");
 	}

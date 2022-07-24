@@ -24,7 +24,7 @@ class PostController extends BaseController
             // Gán hàm addslashes để chống sql injection
             // Nếu $search rỗng thì báo lỗi, tức là người dùng chưa nhập liệu mà đã nhấn submit.
            		if (empty(addslashes($_POST['key']))) {
-                	echo "Yeu cau nhap du lieu vao o trong";
+                	echo "Request to enter data in the empty box";
             	} 
             	else{
             		$post = new Post();

@@ -2,11 +2,11 @@
 <!-- Footer Start -->
                        <div class="col-md-12 page-body margin-top-50 footer">
                           <footer>
-                          <p>© Copyright 2021 LowKey Blog. All rights reserved</p>
+                          <p>© Copyright 2022 Sports News. All rights reserved</p>
                           
                           
                           <!-- UiPasta Credit Start -->
-                          <div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">Nguyen Duc Hieu</a></div>
+                          <div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">Group 6</a></div>
                           <!-- UiPasta Credit End -->
 
                            

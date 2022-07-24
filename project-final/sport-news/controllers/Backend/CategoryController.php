@@ -23,7 +23,6 @@
 				    $image = $_FILES['thumbnail']['name'];
 				  }
 			 $data_insert = [
-    		'id' => $data['id'],
 	      	'name' => $data['name'],
 	    	'parent_id' => $data['parent_id'],
 	    	'thumbnail' => $image,
@@ -34,7 +33,7 @@
 		    $category = new Category();
 		    $categories = $category->create($data_insert);
 		    if ($categories == true) {
-   	 			setcookie('add_new',"Thêm mới thành công !!!", time()+2);
+   	 			setcookie('add_new',"Add new successfully!!!", time()+2);
    			}
 		    $this->redirect('index.php?type=backend&mod=category&act=index');
 		}
@@ -64,7 +63,7 @@
 			$category = new Category();
 			$categories = $category->fix($data_insert,$data['id']);
 			if ($categories == true) {
-				setcookie('update',"Đã update thông tin thành công", time()+2);
+				setcookie('update',"Update successfully", time()+2);
 			}
 			$this->redirect('index.php?type=backend&mod=category&act=index');
 		}
@@ -73,7 +72,7 @@
 			$category_obj = new Category();
 			$category = $category_obj->del($id);
 			if ($category == true) {
-				setcookie('delete',"Xóa một mục thành công", time()+2);
+				setcookie('delete',"Delete successfully", time()+2);
 			}
 			$this->redirect('index.php?type=backend&mod=category&act=index');
 		}	
