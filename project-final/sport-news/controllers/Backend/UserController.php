@@ -18,7 +18,6 @@
 			$image = $_FILES['avatar']['name'];
 		}
 		$data_insert = [
-	    	'id' => $data['id'],
 	      	'name' => $data['name'],
 	      	'email' => $data['email'],
 	    	'password' => $data['password'],
@@ -28,7 +27,7 @@
 	    $user = new User();
 	    $users = $user->create($data_insert);
 	    if ($users == true) {
-	 		setcookie('add_new',"Thêm mới thành công !!!", time()+2);
+	 		setcookie('add_new',"Add new successfully !!!", time()+2);
 		}
 	    $this->redirect("index.php?type=backend&mod=user&act=index");
 	}
@@ -57,7 +56,7 @@
 		$user = new User();
 		$users = $user->fix($data_insert,$data['id']);
 		if ($users == true) {
-			setcookie('update',"Đã update thông tin thành công", time()+2);
+			setcookie('update',"Update successfully", time()+2);
 		}
 		$this->redirect("index.php?type=backend&mod=user&act=index");
 	}
@@ -72,7 +71,7 @@
 		$user_obj = new  User();
 		$user = $user_obj->del($id);
 		if ($user == true) {
-			setcookie('delete',"Xóa một mục thành công", time()+2);
+			setcookie('delete',"Delete successfully", time()+2);
 		}
 		$this->redirect("index.php?type=backend&mod=user&act=index");
 	}

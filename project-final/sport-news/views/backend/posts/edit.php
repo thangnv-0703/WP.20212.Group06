@@ -4,7 +4,7 @@
                     <div class="col-md-12 page-body">
                       <div class="row">
                          <div class="container" style="width: 100%">
-                            <h3 align="center">Update User</h3>
+                            <h3 align="center">Update Post</h3>
                             <hr>
                                 <form action="index.php?type=backend&mod=post&act=update" method="POST" role="form" enctype="multipart/form-data">
                                    <input type="hidden" name="id" value="<?php echo $post['id'] ?>">

@@ -3,9 +3,9 @@
 <div class="col-md-12 page-body">
   <div class="row">
   <div class="sub-title">
-      <h2>Danh mục</h2>
+      <h2>Category</h2>
         <a href="contact.html"><i class="icon-envelope"></i></a>
-        <p><a href="index.php?type=backend&mod=category&act=create">Thêm mới danh mục</a></p>
+        <p><a href="index.php?type=backend&mod=category&act=create">Add new category</a></p>
         <?php if (isset($_COOKIE['add_new'])) { ?>
           <div class="alert alert-success" role="alert">
             <?php echo $_COOKIE['add_new'] ?>
@@ -33,8 +33,8 @@
                 <thead>
                   <tr>
                     <th scope="col">#ID</th>
-                    <th scope="col">Tên</th>
-                    <th scope="col"> Hành Động</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -54,13 +54,7 @@
         </table>
     
         </div>
-        <!-- Blog Post End -->
-    
-        <div class="col-md-12 text-center">
-         <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-         <div id="post-end-message"></div>
-        </div>
-        
+        <!-- Blog Post End -->    
      </div>
       
  </div>

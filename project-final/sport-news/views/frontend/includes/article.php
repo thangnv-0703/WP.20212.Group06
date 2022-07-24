@@ -1,4 +1,4 @@
-<article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box">
+<article class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12 animate-box">
 	<figure>
 		<a href="index.php?type=frontend&mod=post&act=detail&id=<?php echo $value['id'] ?>">
 			<img src="<?php echo('images/post/'.$value['thumbnail']) ;?>" alt="Image" class="img-responsive">
@@ -15,6 +15,6 @@
 		?>
 		</a>
 	</span>
-	<h2 class="fh5co-article-title"><a href="index.php?type=frontend&mod=post&act=detail&id=<?php echo $value['id'] ?>"><?php echo $value['title'] ?></a></h2>
+	<h4 class="fh5co-article-title"><a href="index.php?type=frontend&mod=post&act=detail&id=<?php echo $value['id'] ?>"><?php echo $value['title'] ?></a></h4>
 	<span class="fh5co-meta fh5co-date"><?php echo $value['created_at']; ?></span>
 </article>

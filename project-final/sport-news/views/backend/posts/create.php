@@ -4,14 +4,10 @@
                     <div class="col-md-12 page-body">
                       <div class="row">
                       	<div class="container" style="width: 100%">
-                      		<h3 align="center">DevMind - Education And Technology Group</h3>
+                      		<h3 align="center">Sports News</h3>
 							    <h3 align="center">Add New Post</h3>
 							    <hr>
                         	 <form action="index.php?type=backend&mod=post&act=store" method="POST" role="form" enctype="multipart/form-data">
-					             <div class="form-group">
-						                <label for="">ID</label>
-						                <input type="text" class="form-control" id="" placeholder="" name="id">
-						            </div>
 						            <div class="form-group">
 						                <label for="">Title</label>
 						                <input type="text" class="form-control" id="" placeholder="" name="title">

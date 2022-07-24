@@ -70,11 +70,10 @@
     <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i class="icon-cross3"></i> <span>Close</span></span></a>
     <div class="fh5co-bio">
       <figure>
-        <img src="assets2/images/ava.png" alt="Free HTML5 Bootstrap Template" class="img-responsive">
+        <img src="assets2/images/logo.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive">
       </figure>
-      <h3 class="heading">About Me</h3>
-      <h2>Nguyễn Đức Hiếu</h2>
-      <p>Điểm đến và nghệ thuật ảnh film. Nơi mọi người có thẻ tìm thấy cho mình một chút sự thú vị. Cảm ơn vì đã ghé qua ... </p>
+      <h2>Sport News</h2>
+      <p>Competitive sports are played mainly on a five-and-a-half inch court, the space between your ears. </p>
       <ul class="fh5co-social">
         <li><a href="https://www.facebook.com/hieu.nd1201"><i class="icon-facebook"></i></a></li>
         <li><a href="https://www.instagram.com/hieusng/"><i class="icon-instagram"></i></a></li>
@@ -83,9 +82,9 @@
 
     <div class="fh5co-menu">
       <div class="fh5co-box">
-        <h3 class="heading">Danh mục</h3>
+        <h3 class="heading">Categories</h3>
         <ul>
-          <li><a href="index.php?type=frontend&mod=home&act=index">Trang chủ</a></li>
+          <li><a href="index.php?type=frontend&mod=home&act=index">Home</a></li>
           <?php foreach ($arrS as $key => $value) {?>
             <div class="dropdown">
                 <li style="cursor: pointer;" class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -100,7 +99,7 @@
                 </div>
               </div>
           <?php } ?>
-          <?php foreach($categories as $key1 => $value) { $flag = [] ?>
+           <?php foreach($categories as $key1 => $value) { $flag = [] ?>
             <?php foreach($arrS as $key2 => $value2) {?>
               <?php foreach($value2 as $key3 => $value3) {?>
                 <?php if($value['id'] == $value3['parent_id'] || $value['parent_id'] !== null) { ?>
@@ -109,8 +108,8 @@
               <?php }?>
             <?php }?>
             <?php if(count($flag) == 0) {?>
-                  <li style="cursor: pointer;" class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <a>
+                  <li style="cursor: pointer;">
+                    <a href="index.php?type=frontend&mod=category&act=index&id=<?php echo $value['id'] ?>">
                       <?php echo $value['name'] ?>
                     </a>
                   </li>
@@ -119,15 +118,15 @@
         </ul>
       </div>
       <h3 class="heading">
-          <?php if (isset($_SESSION['user_login']))  { echo '<a href="index.php?type=backend&mod=dashboard&act=index">Quản lí</a>'; }?>
-          <?php if (!isset($_SESSION['user_login']))  { echo '<a href="index.php?type=backend&mod=auth&act=login">Đăng nhập</a>'; } ?>
+          <?php if (isset($_SESSION['user_login']))  { echo '<a href="index.php?type=backend&mod=post&act=index">Admin</a>'; }?>
+          <?php if (!isset($_SESSION['user_login']))  { echo '<a href="index.php?type=backend&mod=auth&act=login">Login</a>'; } ?>
       </h3>
       <div class="fh5co-box">
-        <h3 class="heading">Tìm kiếm</h3>
+        <h3 class="heading">Search key</h3>
         <form action="index.php?type=frontend&mod=post&act=search" method="POST">
           <div class="form-group">
               <input type="text" class="form-control" placeholder="Type a keyword" name="key">
-              <button type="submit" name="ok" style="margin-top: 20px" class="btn btn-primary">Tìm</button>
+              <button type="submit" name="ok" style="margin-top: 20px" class="btn btn-primary">Search</button>
           </div>
         </form>
       </div>
@@ -145,7 +144,7 @@
           <li><a href="https://www.instagram.com/hieusng/"><i class="icon-instagram"></i></a></li>
         </ul>
         <div class="col-lg-12 col-md-12 text-center">
-          <h1 id="fh5co-logo"><a href="index.html">LowKey<sup>NH</sup></a></h1>
+          <h1 id="fh5co-logo"><a href="index.html">Sports<sup>News</sup></a></h1>
         </div>
 
       </div>
