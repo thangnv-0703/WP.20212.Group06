@@ -86,6 +86,11 @@ class Model {
 	protected function delete($table, $id){
 		$query = "DELETE FROM "  . $table ." WHERE id = " . $id;
 		$result = $this->conn->query($query);
+		if ($table == 'categories') {
+			$query2 = "DELETE FROM posts WHERE category_id = " . $id;
+			$result2 = $this->conn->query($query2);
+			return ($result && $result2); 
+		}
 		return $result;
 	}
 	protected function update($table, $data, $id){

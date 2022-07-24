@@ -4,7 +4,7 @@
 <div class="col-md-12 page-body">
 <div class="row">
   <div class="sub-title">
-      <h2>Chi tiết danh mục</h2>
+      <h2>Detail Category</h2>
       <a href="contact.html"><i class="icon-envelope"></i></a>
       <p><a href="index.php?type=backend&mod=category&act=index">BACK</a></p>
      </div>
@@ -39,11 +39,6 @@
     
         </div>
         <!-- Blog Post End -->
-    
-        <div class="col-md-12 text-center">
-         <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-         <div id="post-end-message"></div>
-        </div>
         
      </div>
       

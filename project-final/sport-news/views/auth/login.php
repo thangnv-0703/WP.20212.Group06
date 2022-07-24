@@ -15,9 +15,7 @@
     <meta name="url" content="http://www.yourdomainname.com">
     <meta name="copyright" content="company name">
     <meta name="robots" content="index,follow">
-    
-    
-    <title>Lowkey Blog - Personal Blog Template</title>
+  
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- All CSS Plugins -->
@@ -71,10 +69,10 @@
                         <?php } ?>
                       </h1>
                       <img style="width: 100%" src="https://source.unsplash.com/K4mSJ7kc0As/600x800" alt="">
-                      <span style="padding: 10px 0px;"><a href="index.php?type=frontend&mod=home&act=index">Trang chủ</a></span>
+                      <span style="padding: 10px 0px;"><a href="index.php?type=frontend&mod=home&act=index">Home</a></span>
                   </div><br><br>
                     <?php if ( isset($_SESSION['login'])){ ?>
-                    <a href="index.php?type=backend&mod=auth&act=logout">Đăng xuất</a>             
+                    <a href="index.php?type=backend&mod=auth&act=logout">Logout</a>             
                     <?php } ?>
                  <ul class="social-icon">
                    <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
@@ -93,7 +91,7 @@
 
 					 <div class="p-5">
                               <div class="text-center">
-                                  <h1 class="h4 text-gray-900 mb-4">Chào mừng trở lại!</h1>
+                                  <h1 class="h4 text-gray-900 mb-4">Welcome back!</h1>
                               </div>
                               <form class="user" method="POST" action="index.php?type=backend&mod=auth&act=handle">
                                   <div class="form-group">
@@ -113,7 +111,7 @@
                                   <div class="form-group">
                                       <div class="custom-control custom-checkbox small">
                                           <input type="checkbox" class="custom-control-input" id="customCheck">
-                                          <label class="custom-control-label" for="customCheck">Nhớ tài khoản</label>
+                                          <label class="custom-control-label" for="customCheck">Remember account</label>
                                       </div>
                                   </div>
                                   <button type="submit" class="btn btn-primary btn-user btn-block">
@@ -121,18 +119,18 @@
                                   </button>
                                   <hr>
                                   <a href="index.html" class="btn btn-google btn-user btn-block">
-                                      <i class="fab fa-google fa-fw"></i> Đăng nhập với Google
+                                      <i class="fab fa-google fa-fw"></i> Login with Google
                                   </a>
                                   <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                      <i class="fab fa-facebook-f fa-fw"></i> Đăng nhập với Facebook
+                                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                   </a>
                               </form>
                               <hr>
                               <div class="text-center">
-                                  <a class="small" href="forgot-password.html">Quên mật khẩu?</a>
+                                  <a class="small" href="forgot-password.html">Forgot password?</a>
                               </div>
                               <div class="text-center">
-                                  <a class="small" href="register.html">Tạo tài khoản mới!</a>
+                                  <a class="small" href="register.html">Create new account!</a>
                               </div>
                   		</div>
   

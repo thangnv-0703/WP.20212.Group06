@@ -15,9 +15,6 @@
     <meta name="copyright" content="company name">
     <meta name="robots" content="index,follow">
     
-    
-    <title>Lowkey Blog - Personal Blog Template</title>
-    
     <!-- Favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- All CSS Plugins -->
@@ -75,7 +72,6 @@
                         <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
                          <div id="menu" class="collapse">
                            <ul class="menu-link">
-                               <li><a href="index.php?type=backend&mod=dashboard&act=index">Dashboard</a></li>
                                <li><a href="index.php?type=backend&mod=category&act=index">Category</a></li>
                                <li><a href="index.php?type=backend&mod=post&act=index">Post</a></li>
                                <li><a href="index.php?type=backend&mod=user&act=index">User</a></li>
@@ -93,10 +89,10 @@
                                  <?php echo $_SESSION['user_login']; ?>
                               <?php } ?>
                             </h1>
-                            <span>Web Developer</span>
+                            <span>Admin</span>
                         </div><br><br>
                           <?php if ( isset($_SESSION['login'])){ ?>
-                          <a href="index.php?type=backend&mod=auth&act=logout">Đăng xuất</a>             
+                          <a href="index.php?type=backend&mod=auth&act=logout">Logout</a>             
                           <?php } ?>
                        <ul class="social-icon">
                          <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>

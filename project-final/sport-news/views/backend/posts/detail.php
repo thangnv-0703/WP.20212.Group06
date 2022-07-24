@@ -5,7 +5,7 @@
 
     
     <div class="sub-title">
-      <h2>Chi tiết bài viết</h2>
+      <h2>Post Detail</h2>
       <a href="contact.html"><i class="icon-envelope"></i></a>
       <p><a href="index.php?type=backend&mod=post&act=index">BACK</a></p>
      </div>
@@ -66,11 +66,6 @@
               <div><?php echo $post['content']?></div>
         </div>
         <!-- Blog Post End -->
-    
-        <div class="col-md-12 text-center">
-         <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-         <div id="post-end-message"></div>
-        </div>
         
      </div>
       

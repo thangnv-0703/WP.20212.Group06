@@ -11,7 +11,6 @@
  	public function store(){
 			$data = $_POST;
 			$data_insert = [
-    		'id' => $data['id'],
 	    	'parent_id' => $data['parent_id'],
 	    	'user_name' => $data['user_name'],
 	    	'email' => $data['email'],

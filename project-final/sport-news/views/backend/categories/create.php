@@ -4,7 +4,7 @@
                     <div class="col-md-12 page-body">
                       <div class="row">
                       	<div class="container" style="width: 100%">
-                        	 <h3 align="center">DevMind - Education And Technology Group</h3>
+                        	 <h3 align="center">Sports News</h3>
 							    <h3 align="center">Add New Category</h3>
 							    <hr>
 							        <form action="index.php?type=backend&mod=category&act=store" method="POST" role="form" enctype="multipart/form-data">
