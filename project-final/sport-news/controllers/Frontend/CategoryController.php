@@ -1,4 +1,5 @@
 <?php 
+	// categories
 	require_once('controllers/BaseController.php'); 
 	require_once('models/Post.php');
 	require_once('models/Category.php');
@@ -15,4 +16,5 @@
 			$this->view('frontend/categories/index.php',['posts' => $posts, 'users' => $users, 'categories' => $categories]);
 		}
 	}
+
 ?>
